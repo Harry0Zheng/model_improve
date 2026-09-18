@@ -1,6 +1,6 @@
 # model_improve
 
-我自己用的模型结构改进 Skill。对话里说「按 model_improve 做」就行。
+模型结构改进 Skill。对话里说「按 model_improve 做」就行。
 
 流程是先看 Baseline 和问题，再从零件库里挑 1～3 个模块，小改、Forward 过了再训练，消融时别动数据划分和训练配置。具体步骤在 `SKILL.md`、`workflow.md`、`constraints.md`。给 Codex 粘贴的短模板在 `prompts.md`。
 
