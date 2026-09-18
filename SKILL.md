@@ -1,11 +1,11 @@
 ---
-name: codex-model-improve
+name: model_improve
 description: >-
   Guides deep-learning model structure experiments: diagnose a baseline, pick
   1–3 candidate modules, insert them with minimal edits, run forward tests,
   and design fair ablations. Use when improving CNN/Transformer/Mamba/U-Net
   models, adding attention or multi-scale blocks, replacing encoder/decoder
-  parts, or when the user mentions Codex 模型改进, 加模块, 消融实验, Baseline 改进.
+  parts, or when the user mentions model_improve, Codex 模型改进, 加模块, 消融实验, Baseline 改进.
 ---
 
 # Codex 模型改进
@@ -38,6 +38,7 @@ description: >-
 | 要消融 / 怕对比不公平 | 第 9 步 |
 | 贴了指标，问下一步 | 第 10 步 |
 | 自己要写给 Codex 的指令 | 用 prompts.md 填空，不要空喊「帮我创新」 |
+| 点名 model_improve | 按本 Skill 执行 |
 
 ## 必做输出
 
@@ -82,6 +83,6 @@ Forward Test：通过 / 失败原因
 
 本 Skill 约束的是 Cursor Agent。在 WSL 里跑训练不需要把 PyTorch 环境装进 Skill。
 
-- 在 Cursor 里改结构：安装本仓库到 `~/.cursor/skills/codex-model-improve`（Windows 与 WSL 各装一次，见 README）。
+- 在 Cursor 里改结构：安装本仓库到 `~/.cursor/skills/model_improve`（Windows 与 WSL 各装一次，见 README）。
 - 在 Codex CLI 里改结构：把 [prompts.md](prompts.md) 里对应模板贴进对话，并附上 [constraints.md](constraints.md) 的限制段。
 - 实验代码放在用户项目里；需要某个零件时，只根据 `library.md` 对应节来写，不要把整份零件库拷进模型。

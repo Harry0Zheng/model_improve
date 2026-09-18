@@ -1,10 +1,10 @@
-# Codex 模型改进 Skill + 零件库
+# model_improve
 
 把「分析 Baseline → 选 1～3 个模块 → 最小改动 → Forward Test → 公平消融」写成 Cursor Skill。零件实现以 Markdown 为准。
 
 ## 上传 GitHub 的范围（只有这个文件夹）
 
-上传目录：`e:\Codex模型改进\codex-model-improve\`
+上传目录：`e:\Codex模型改进\model_improve\`
 
 | 上传 | 不上传 |
 |------|--------|
@@ -14,22 +14,22 @@
 
 不要把整个 `e:\Codex模型改进` 当成仓库根目录。
 
-本机没有 GitHub CLI，**不能在未登录的情况下替你一键建远程仓库**。仓库已经在本地初始化；你登录 GitHub 后，在该目录执行下面三条即可推上去。
+本机没有 GitHub CLI，**不能在未登录的情况下替你一键建远程仓库**。仓库已经在本地初始化；你登录 GitHub 后，在该目录执行：
 
 ```powershell
-cd "e:\Codex模型改进\codex-model-improve"
-gh repo create codex-model-improve --private --source . --remote origin --push
+cd "e:\Codex模型改进\model_improve"
+gh repo create model_improve --private --source . --remote origin --push
 ```
 
 没有 `gh` 时：在 GitHub 网页新建空仓库（不要勾 README），然后：
 
 ```powershell
-cd "e:\Codex模型改进\codex-model-improve"
-git remote add origin https://github.com/<你的用户名>/codex-model-improve.git
+cd "e:\Codex模型改进\model_improve"
+git remote add origin https://github.com/<你的用户名>/model_improve.git
 git push -u origin main
 ```
 
-装到 Cursor：Windows 已把本目录联接到 `~\.cursor\skills\codex-model-improve`。WSL 里的 Cursor 再 clone 同一仓库到 `~/.cursor/skills/codex-model-improve`。
+装到 Cursor：Windows 已把本目录联接到 `~\.cursor\skills\model_improve`。WSL 里的 Cursor 再 clone 同一仓库到 `~/.cursor/skills/model_improve`。对话里可写：`按 model_improve 做。`
 
 ## Windows / WSL
 
