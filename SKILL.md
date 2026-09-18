@@ -72,12 +72,12 @@ Forward Test：通过 / 失败原因
 
 ## 零件库用法
 
-1. 先读 [modules/catalog.md](modules/catalog.md)，不要整份 [modules/library.md](modules/library.md) 读进上下文。
-2. 只按 catalog 的节号，打开 `library.md` 里准备实验的那 1 节（最多 3 节）。
-3. 按该节 Markdown 里的代码，在用户项目中写成独立 `nn.Module`。
+1. 先读 [modules/catalog.md](modules/catalog.md)。零件实现不在本仓库，在本地 `e:\Codex模型改进\模块.md`（WSL 下常见为 `/mnt/e/Codex模型改进/模块.md`）。
+2. 只按 catalog 的节号打开 `模块.md` 里准备实验的那 1 节（最多 3 节），不要通读整份。
+3. 按该节代码在用户项目中写成独立 `nn.Module`。
 4. 优先选 **同 shape、2D、无额外重依赖** 的即插模块。
 5. catalog 标注「不可用 / 需核对」的条目，禁止直接插入。
-6. 用户新看到的模块：按 [modules/ADDING.md](modules/ADDING.md) 追加到 `library.md` 后再筛选。
+6. 新模块按 [modules/ADDING.md](modules/ADDING.md) 追加到本地 `模块.md`，并更新 catalog。
 
 ## 给 Codex / WSL 的用法
 
@@ -85,4 +85,4 @@ Forward Test：通过 / 失败原因
 
 - 在 Cursor 里改结构：安装本仓库到 `~/.cursor/skills/model_improve`（Windows 与 WSL 各装一次，见 README）。
 - 在 Codex CLI 里改结构：把 [prompts.md](prompts.md) 里对应模板贴进对话，并附上 [constraints.md](constraints.md) 的限制段。
-- 实验代码放在用户项目里；需要某个零件时，只根据 `library.md` 对应节来写，不要把整份零件库拷进模型。
+- 实验代码放在用户项目里；需要某个零件时，只根据本地 `模块.md` 对应节来写，不要把整份零件库拷进模型或推进本仓库。
