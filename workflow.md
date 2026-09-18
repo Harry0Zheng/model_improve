@@ -20,7 +20,7 @@
 
 ## 5. 候选模块筛选
 
-结合 [modules/catalog.md](modules/catalog.md) 与用户新模块。对每个候选写：核心作用、类型（Channel / Spatial / Multi-scale / Context / Fusion / Lightweight）、插入位置、是否适合当前任务、Params/FLOPs、是否与现有模块重复、训练风险。只推荐 1～3 个首先实验的模块。
+结合 [modules/catalog.md](modules/catalog.md) 与 [modules/library.md](modules/library.md) 对应节。对每个候选写：核心作用、类型、插入位置、是否适合当前任务、Params/FLOPs、是否与现有模块重复、训练风险。只推荐 1～3 个首先实验的模块。只读选中的节，不要通读整份 library。
 
 ## 6. 插入位置
 
